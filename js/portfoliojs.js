@@ -28,7 +28,4 @@ function buildListGroup (repoData) {
   return newLink
  }
 
-
-//calls commit messages for table
-
 });
