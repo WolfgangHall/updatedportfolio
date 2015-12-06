@@ -4,11 +4,11 @@ $(document).ready(function(){
 //calls repos for list group items
 $.ajax({
  type: "GET",
- url: "https://api.github.com/users/WolfgangHall/repos",
+ url: "https://api.github.com/users/WolfgangHall/repos?sort=updated",
  success: function(repos) {
   for (var i = 0; i < repos.length; i++) {
    var newListItem = buildListGroup (repos[i]);
-   $(".list-group").append(newListItem);
+   $(".list-group").eq(2).append(newListItem);
   }
  },
  error: function (jqXHR, textStatus) {

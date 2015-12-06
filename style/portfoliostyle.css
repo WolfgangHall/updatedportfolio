@@ -5,12 +5,17 @@ thead th{
 #portfoliophoto {
   height: auto; 
   width: auto; 
-  max-height: 400px;
-  max-width: 400px;
+  max-height: 375px;
+  max-width: 375px;
   border-radius: 5%;
 
 }
 
-.jumbotronwidth {
- width: 100%;
+.jumbotron {
+
+}
+
+footer {
+ text-align: center;
+ 
 }
