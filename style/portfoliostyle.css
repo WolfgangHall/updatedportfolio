@@ -1,5 +1,29 @@
+body {
+  padding-top: 50px;
+}
+
 thead th{
  text-align: center;
+}
+
+#aboutsection{
+  text-align: center;
+}
+
+#aboutsection .panel-body {
+  text-align: left;
+}
+
+#techsection .page-header{
+  text-align: center;
+}
+
+#techsection .panel-heading{
+  text-align: center;
+}
+
+#projectsection {
+  text-align: center;
 }
 
 #portfoliophoto {
@@ -12,10 +36,27 @@ thead th{
 }
 
 .jumbotron {
-
+    position: relative;
+    background: #f0f0f0 url("http://i1377.photobucket.com/albums/ah54/WolfgangHall/picjumbo.com_HNCK0369_zpsm0ekji35.jpg") center center;
+    width: auto;
+    height: auto;
+    min-height: 600px;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
 }
+
 
 footer {
  text-align: center;
- 
+ margin-top: 100px;
+ border: 2px black solid;
+}
+
+#glyphModal {
+ text-align: center;
+}
+
+.btn-info {
+ margin: 10px;
 }

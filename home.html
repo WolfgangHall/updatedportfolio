@@ -1,202 +1,242 @@
 <!DOCTYPE html>
 <html>
+
 <head>
- <title>Wolfgang's Portfolio</title>
- <link rel="stylesheet" type="text/css" href="style/portfoliostyle.css">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/flatly/bootstrap.min.css">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <title>Wolfgang's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style/portfoliostyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 </head>
+
 <body>
 
   <div class="container-fluid">
+    
     <div class="row-fluid">
-     <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-
-       <div class="navbar-header">
-        <a class="navbar-brand" href="#">WH</a>
-      </div>
-      <div>
-       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact</a></li>
-        <li><a href="#projects" class="btn btn-primary">Projects</a></li>
-        <li><a href="#" class="btn btn-primary">Blog</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-</div>
-
-<div class="row-fluid">
- <div class="col-md-12">
-  <div class="jumbotron">
-    <div class="container">
-      <img class="pull-right" id="portfoliophoto" src="http://i1377.photobucket.com/albums/ah54/WolfgangHall/IMG_6634_zpsnue3ywtz.jpg">
-      <h1>Hey, I'm Wolfgang</h1>
-      <p>I'm a fullstack Web Developer in training</p>
-      <p>Welcome to my personal website</p>
-      <p><a class="btn btn-primary btn-lg" href="#projects" role="button">Check out my work</a>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="row-fluid">
- <div class="col-md-10 col-md-offset-1">
-  <div class="page-header">
-    <h2>About me</h2>
-  </div> 
-  <div class="panel panel-default">
-    <div class="panel-body">
-      I love basketball, comic book lore, football (both types), developing my fledling guitar skills and soccer on the beach.
-    </div>
-  </div>
-
-</div>
-</div>
-
-
-
-<div class="row-fluid">
-  <div class="col-md-10 col-md-offset-1">
-    <div class="page-header">
-      <h2>Technologies</h2>
-    </div>
-    <div class="col-md-6">
-      <div class="panel panel-primary">
-        <div class="panel-heading">Skills Learned</div>
-        <div class="panel-body">
-          <ul class="list-group">
-            <li class="list-group-item">HTML5</li>
-            <li class="list-group-item">CSS</li>
-            <li class="list-group-item">JavaScript</li>
-            <li class="list-group-item">jQuery</li>
-            <li class="list-group-item">APIs</li>
-            <li class="list-group-item">JSON</li>
-            <li class="list-group-item">AJAX</li>
-            <li class="list-group-item">Node.js</li>
-            <li class="list-group-item">Ruby on Rails</li>
-            <li class="list-group-item">MySQL</li>
-            <li class="list-group-item">MongoDB</li>
-            <li class="list-group-item">ORM</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="panel panel-success">
-        <div class="panel-heading">Topics Covered</div>
-        <div class="panel-body">
-          <ul class="list-group">
-            <li class="list-group-item">Database Theory</li>
-            <li class="list-group-item">Agile Methodologies</li>
-            <li class="list-group-item">Presentation Skills</li>
-            <li class="list-group-item">Research Methods</li>
-            <li class="list-group-item">System Administration</li>
-            <li class="list-group-item">Quality Assurance Testing</li>
-            <li class="list-group-item">Social Coding Best Practices</li>
-            <li class="list-group-item">Computer Science</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="row-fluid">
-  <div class="col-md-12">
-
-    <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation"><a href="#projects" aria-controls="projects" role="tab" data-toggle="tab">Projects</a></li>
-      <li role="presentation"><a href="#githubTab" aria-controls="github" role="tab" data-toggle="tab">Github</a></li>
-    </ul>
-
-    <div class="tab-content">
-      <div role="tabpanel" class="tab-pane active" id="projects">
-        <div class="row-fluid">
-          <div class="col-md-4">1</div>
-          <div class="col-md-4">2</div>
-          <div class="col-md-4">3</div>
-        </div>
-      </div>
-      <div role="tabpanel" class="tab-pane" id="githubTab">
-        <div class="row-fluid">
-          <div class="col-md-4">
-            <div class="list-group"></div>
+     <div class="col-md-12">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="home.html">Wolfgang Hall</a>
           </div>
+          <div>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#aboutsection" class="btn btn-primary">About</a>
+              <li><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact</a>
+              </li>
+              <li><a href="#projects" class="btn btn-primary">Projects</a>
+              </li>
+              <li><a href="#" class="btn btn-primary">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+     </div>
+    </div>
 
-          <div class="col-md-8">
-            <table class="table">
-              <thead>
-                <th>sha</th>
-                <th>Author</th>
-                <th>Message</th>
-                <th>Date</th>
-              </thead>
-              <tbody></tbody>
-            </table>
+    <div class="row-fluid">
+      <div class="col-md-12">
+        <div class="jumbotron">
+          <div class="container-fluid">
+            <h1>Wolfgang Hall</h1>
+            <p>fullstack Web Developer in training</p>
+            <p>welcome to my personal website</p>
+            <a class="btn btn-primary btn-lg" href="#projects" role="button">Check out my work</a>
           </div>
         </div>
       </div>
     </div>
 
 
-  </div>
-</div>
-
-
-<footer>
-  <div class="row">
-    <div class="col-md-12">
-     <div class="modal-body btn-group" id="contactfooter">
-      <a class="btn btn-default" href="https://github.com/WolfgangHall"><i class="fa fa-github fa-3x"></i></a>
-      <a class="btn btn-default" href="mailto:johnalexander.w.hall@gmail.com"><i class="fa fa-google fa-3x"></i></a>
-      <a class="btn btn-default" href="https://www.linkedin.com/profile/view?id=AAMAABB23-UB2dbZNJStdBTQ58dJ5g241CIpO1I&trk=hp-identity-name"><i class="fa fa-linkedin fa-3x"></i></a>
-      <a class="btn btn-default" href="http://stackoverflow.com/users/5447860/wolfgang-hall"><i class="fa fa-stack-overflow fa-3x"></i></a>
-      <a class="btn btn-default" href="https://twitter.com/wolfgang_hall"><i class="fa fa-twitter fa-3x"></i></a>
+    <div class="row-fluid">
+      <div class="col-md-12"  id="aboutsection">
+        <div class="page-header">
+        <h2>About</h2>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <p>I'm a full stack Web Developer who enjoys the art of building websites. I love coding efficient, user-friendly web experiences, and learning as much as I can about the craft.</p>
+              <p>I started my Web Development journey at Rutgers Coding Bootcamp, a 6 month learning experience that has taught me some amazing technical skills.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img id="portfoliophoto" src="http://i1377.photobucket.com/albums/ah54/WolfgangHall/IMG_6634_zpsnue3ywtz.jpg"> 
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <p>When I'm not building a website, I enjoy playing basketball and football(both types), reading science fiction novels, brushing up on my German, and learning about comic book lore. I must also admit that I love Japanese anime.</p>
+              <p>I'm currently still mastering my skills at Rutgers Coding Bootcamp.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+
+
+
+    <div class="row-fluid">
+      <div class="col-md-10 col-md-offset-1" id="techsection">
+        <div class="page-header">
+          <h2>Technologies</h2>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-primary">
+            <div class="panel-heading">Skills Learned</div>
+            <div class="panel-body">
+              <ul class="list-group">
+                <li class="list-group-item">HTML5</li>
+                <li class="list-group-item">CSS</li>
+                <li class="list-group-item">JavaScript</li>
+                <li class="list-group-item">jQuery</li>
+                <li class="list-group-item">APIs</li>
+                <li class="list-group-item">JSON</li>
+                <li class="list-group-item">AJAX</li>
+                <li class="list-group-item">Node.js</li>
+                <li class="list-group-item">Ruby on Rails</li>
+                <li class="list-group-item">MySQL</li>
+                <li class="list-group-item">MongoDB</li>
+                <li class="list-group-item">ORM</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-info">
+            <div class="panel-heading">Topics Covered</div>
+            <div class="panel-body">
+              <ul class="list-group">
+                <li class="list-group-item">Database Theory</li>
+                <li class="list-group-item">Agile Methodologies</li>
+                <li class="list-group-item">Presentation Skills</li>
+                <li class="list-group-item">Research Methods</li>
+                <li class="list-group-item">System Administration</li>
+                <li class="list-group-item">Quality Assurance Testing</li>
+                <li class="list-group-item">Social Coding Best Practices</li>
+                <li class="list-group-item">Computer Science</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row-fluid">
+      <div class="col-md-12">
+        <div class="page-header" id="projectsection">
+          <h2>Projects</h2>
+        </div>
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation"><a href="#projects" aria-controls="projects" role="tab" data-toggle="tab">Projects</a>
+          </li>
+          <li role="presentation"><a href="#githubTab" aria-controls="github" role="tab" data-toggle="tab">Github</a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="projects">
+            <div class="row-fluid">
+              <div class="col-md-4">1</div>
+              <div class="col-md-4">2</div>
+              <div class="col-md-4">3</div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="githubTab">
+            <div class="row-fluid">
+              <div class="col-md-4">
+                <div class="list-group"></div>
+              </div>
+
+              <div class="col-md-8">
+                <table class="table">
+                  <thead>
+                    <th>sha</th>
+                    <th>Author</th>
+                    <th>Message</th>
+                    <th>Date</th>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 </div>
-</footer>
 
-<!--modal for contacting -->
+  
 
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Contact</h4>
+  <footer>
+    <div class="row">
+      <div class="col-md-12">&copy Wolfgang Hall</div>
+      <div class="col-md-12">
+        <div class="modal-body btn-group" id="contactfooter">
+          <a class="btn btn-info" href="https://github.com/WolfgangHall" title="Find me on Github"><i class="fa fa-github fa-3x"></i></a>
+          <a class="btn btn-info" href="mailto:johnalexander.w.hall@gmail.com" title="Email me"><i class="fa fa-google fa-3x"></i></a>
+          <a class="btn btn-info" href="https://www.linkedin.com/profile/view?id=AAMAABB23-UB2dbZNJStdBTQ58dJ5g241CIpO1I&trk=hp-identity-name" title="Find me on LinkedIn"><i class="fa fa-linkedin fa-3x"></i></a>
+          <a class="btn btn-info" href="http://stackoverflow.com/users/5447860/wolfgang-hall" title="Find me on Stack Overflow"><i class="fa fa-stack-overflow fa-3x"></i></a>
+          <a class="btn btn-info" href="https://twitter.com/wolfgang_hall" title="Follow me on Twitter"><i class="fa fa-twitter fa-3x"></i></a>
+        </div>
       </div>
-      <div class="modal-body btn-group">
-        <a class="btn btn-default" href="https://github.com/WolfgangHall"><i class="fa fa-github fa-3x"></i></a>
-        <a class="btn btn-default" href="mailto:johnalexander.w.hall@gmail.com"><i class="fa fa-google fa-3x"></i></a>
-        <a class="btn btn-default" href="https://www.linkedin.com/profile/view?id=AAMAABB23-UB2dbZNJStdBTQ58dJ5g241CIpO1I&trk=hp-identity-name"><i class="fa fa-linkedin fa-3x"></i></a>
-        <a class="btn btn-default" href="http://stackoverflow.com/users/5447860/wolfgang-hall"><i class="fa fa-stack-overflow fa-3x"></i></a>
-        <a class="btn btn-default" href="https://twitter.com/wolfgang_hall"><i class="fa fa-twitter fa-3x"></i></a>
+    </div>
+  </footer>
+
+      <!--modal for contacting -->
+
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Contact</h4>
+          </div>
+          <div class="modal-body btn-group" id="glyphModal">
+            <a class="btn btn-info" href="https://github.com/WolfgangHall" title="Find me on Github"><i class="fa fa-github fa-3x"></i></a>
+            <a class="btn btn-info" href="mailto:johnalexander.w.hall@gmail.com" title="Email me"><i class="fa fa-google fa-3x"></i></a>
+            <a class="btn btn-info" href="https://www.linkedin.com/profile/view?id=AAMAABB23-UB2dbZNJStdBTQ58dJ5g241CIpO1I&trk=hp-identity-name" title="Find me on LinkedIn"><i class="fa fa-linkedin fa-3x"></i></a>
+            <a class="btn btn-info" href="http://stackoverflow.com/users/5447860/wolfgang-hall" title="Find me on Stack Overflow"><i class="fa fa-stack-overflow fa-3x"></i></a>
+            <a class="btn btn-info" href="https://twitter.com/wolfgang_hall" title="Follow me on Twitter"><i class="fa fa-twitter fa-3x"></i></a>
+          </div>
+          <div class="form-group">
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
 
 
-</div>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="js/portfoliojs.js"></script>
-<script type="text/javascript" src="js/commits.js"></script>
-<script type="text/javascript" src="js/tabs.js"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/portfoliojs.js"></script>
+  <script type="text/javascript" src="js/commits.js"></script>
+  <script type="text/javascript" src="js/tabs.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
+
 </html>
+
+
+
+
+
+            
+            
+
 
 
 
