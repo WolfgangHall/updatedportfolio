@@ -53,10 +53,14 @@ footer {
  border: 2px black solid;
 }
 
-#glyphModal {
+.modal-body {
  text-align: center;
 }
 
 .btn-info {
- margin: 10px;
+ margin: 7px;
+}
+
+#modalBtnGroup {
+  margin-bottom: 40px;
 }
