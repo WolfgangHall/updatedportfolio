@@ -4,6 +4,7 @@
 <head>
   <title>Wolfgang's Portfolio</title>
   <link rel="stylesheet" type="text/css" href="style/portfoliostyle.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600,700|Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/flatly/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -12,7 +13,7 @@
 <body>
 
   <div class="jumbotron">
-    <div class="container">
+    <div class="container" id="jumbotrontext">
       <h1>Wolfgang Hall</h1>
       <p>fullstack Web Developer in training</p>
       <p>welcome to my personal website</p>
@@ -32,6 +33,7 @@
           <div>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#" class="btn btn-primary" id="aboutBtn">About</a>
+              <li><a href="#" class="btn btn-primary" id="techBtn">Technologies</a>
                 <li><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#contactModal" id="contactBtn">Contact</a>
                 </li>
                 <li><a href="#" class="btn btn-primary" id="projectBtn">Projects</a>
@@ -58,8 +60,8 @@
         <div class="col-md-4">
           <div class="panel panel-default">
             <div class="panel-body">
-              <p>I'm a full stack Web Developer who enjoys the art of building websites. I love coding efficient, user-friendly web experiences, and learning as much as I can about the craft.</p>
-              <p>I started my Web Development journey at Rutgers Coding Bootcamp, a 6 month learning experience that has taught me some amazing technical skills.</p>
+              <p>I'm a full stack Web Developer from Jersey City, NJ. I enjoy coding user-friendly web experiences, while learning as much as I can about the craft.</p>
+              <p>I started my Web Development journey at Rutgers Coding Bootcamp, a 6 month bootcamp that has already taught me so much.</p>
             </div>
           </div>
         </div>
@@ -69,8 +71,8 @@
         <div class="col-md-4">
           <div class="panel panel-default">
             <div class="panel-body">
-              <p>When I'm not building a website, I enjoy playing basketball and football(both types), reading science fiction novels, brushing up on my German, and learning about comic book lore. I must also admit that I love Japanese anime.</p>
-              <p>I'm currently still mastering my skills at Rutgers Coding Bootcamp.</p>
+              <p>When I'm not building a website, I enjoy playing basketball and football(both types), reading science fiction novels, brushing up on my German, and geeking over comic book lore. I must also admit that I love Japanese anime.</p>
+              <p>I'll be attending Rutgers Coding Bootcamp until April 2016.</p>
             </div>
           </div>
         </div>
@@ -145,14 +147,18 @@
               <div class="col-md-6">
                 <h3>Pokemon Clicker Game</h3>
                 <a href="https://fast-crag-1900.herokuapp.com/"><img src="http://i1377.photobucket.com/albums/ah54/WolfgangHall/pokemon%20screen_zpsjrapehuu.png"></a>
-                <p>A fun little game that involves clicking on as many pokemon as you can before a timer runs out. Created to practice traversing the DOM, mapping elements, and Javascript.</p>
-                <p>Created using HTML5, CSS3, and Javascript.</p>
+                <div id="projectInfo">
+                  <p>A fun little game that involves clicking on as many pokemon as you can before a timer runs out. Created to practice traversing the DOM, mapping elements, and Javascript.</p>
+                  <p>Created using HTML5, CSS3, and Javascript.</p>
+                </div>
               </div>
               <div class="col-md-6">
                 <h3>Mock Travel Site</h3>
                 <a href="#"><img src="http://i1377.photobucket.com/albums/ah54/WolfgangHall/travelscreen_zps2gppnnvx.png"></a>
-                <p>A hard-coded mock travel booking website created to practice jQuery.</p>
-                <p>Created using HTML5, CSS3, and jQuery.</p>
+                <div id="projectInfo">
+                  <p>A hard-coded, mock travel booking website created to practice jQuery.</p>
+                  <p>Created using HTML5, CSS3, and jQuery.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -163,7 +169,7 @@
               </div>
 
               <div class="col-md-8">
-                <table class="table">
+                <table class="table table-striped table-responsive">
                   <thead>
                     <th>sha</th>
                     <th>Author</th>
