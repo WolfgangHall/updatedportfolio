@@ -4,18 +4,27 @@
 <head>
   <title>Wolfgang's Portfolio</title>
   <link rel="stylesheet" type="text/css" href="style/portfoliostyle.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/flatly/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
 
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Wolfgang Hall</h1>
+      <p>fullstack Web Developer in training</p>
+      <p>welcome to my personal website</p>
+      <a class="btn btn-primary btn-lg" href="#" id="mainBtn" role="button">Check out my work</a>
+    </div>
+  </div>
+
   <div class="container-fluid">
 
     <div class="row-fluid">
      <div class="col-md-12">
-      <nav class="navbar navbar-inverse navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand" href="home.html">Wolfgang Hall</a>
@@ -36,18 +45,9 @@
       </div>
     </div>
 
-    <div class="row-fluid">
-      <div class="col-md-12">
-        <div class="jumbotron">
-          <div class="container-fluid">
-            <h1>Wolfgang Hall</h1>
-            <p>fullstack Web Developer in training</p>
-            <p>welcome to my personal website</p>
-            <a class="btn btn-primary btn-lg" href="#" id="mainBtn" role="button">Check out my work</a>
-          </div>
-        </div>
-      </div>
-    </div>
+
+
+
 
 
     <div class="row-fluid">
@@ -80,7 +80,7 @@
 
 
     <div class="row-fluid">
-      <div class="col-md-10 col-md-offset-1" id="techsection">
+      <div class="col-md-12" id="techsection">
         <div class="page-header">
           <h2>Technologies</h2>
         </div>
@@ -128,23 +128,32 @@
 
 
     <div class="row-fluid">
-      <div class="col-md-12">
+      <div class="col-md-12" id="allprojects">
         <div class="page-header" id="projectsection">
           <h2>Projects</h2>
         </div>
         <ul class="nav nav-tabs" role="tablist">
           <li role="presentation"><a href="#projects" aria-controls="projects" role="tab" data-toggle="tab">Projects</a>
           </li>
-          <li role="presentation"><a href="#githubTab" aria-controls="github" role="tab" data-toggle="tab">Github</a>
+          <li role="presentation"><a href="#githubTab" aria-controls="github" role="tab" data-toggle="tab">Github Repos</a>
           </li>
         </ul>
 
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="projects">
             <div class="row-fluid">
-              <div class="col-md-4">1</div>
-              <div class="col-md-4">2</div>
-              <div class="col-md-4">3</div>
+              <div class="col-md-6">
+                <h3>Pokemon Clicker Game</h3>
+                <a href="#"><img src="http://i1377.photobucket.com/albums/ah54/WolfgangHall/pokemon%20screen_zpsjrapehuu.png"></a>
+                <p>A fun little game that involves clicking on as many pokemon as you can before a timer runs out. Created to practice traversing the DOM, mapping elements, and Javascript.</p>
+                <p>Created using HTML5, CSS3, and Javascript.</p>
+              </div>
+              <div class="col-md-6">
+                <h3>Mock Travel Site</h3>
+                <a href="#"><img src="http://i1377.photobucket.com/albums/ah54/WolfgangHall/travelscreen_zps2gppnnvx.png"></a>
+                <p>A hard-coded mock travel booking website created to practice jQuery.</p>
+                <p>Created using HTML5, CSS3, and jQuery.</p>
+              </div>
             </div>
           </div>
           <div role="tabpanel" class="tab-pane" id="githubTab">
@@ -176,7 +185,7 @@
 
   <footer>
     <div class="row">
-      <div class="col-md-12">&copy Wolfgang Hall</div>
+      <div class="col-md-12" id="footerhead">&copy Wolfgang Hall 2015</div>
       <div class="col-md-12">
         <div class="modal-body btn-group" id="contactfooter">
           <a class="btn btn-info" href="https://github.com/WolfgangHall" title="Find me on Github"><i class="fa fa-github fa-3x"></i></a>
@@ -203,55 +212,55 @@
           <div class="row">
             <label for "socialMedia" class="col-sm-2">Connect:</label>
             <div class="col-sm-10" id="modalBtnGr">
-            <a class="btn btn-info" href="https://github.com/WolfgangHall" title="Find me on Github"><i class="fa fa-github fa-3x"></i></a>
-            <a class="btn btn-info" href="mailto:johnalexander.w.hall@gmail.com" title="Email me"><i class="fa fa-google fa-3x"></i></a>
-            <a class="btn btn-info" href="https://www.linkedin.com/profile/view?id=AAMAABB23-UB2dbZNJStdBTQ58dJ5g241CIpO1I&trk=hp-identity-name" title="Find me on LinkedIn"><i class="fa fa-linkedin fa-3x"></i></a>
-            <a class="btn btn-info" href="http://stackoverflow.com/users/5447860/wolfgang-hall" title="Find me on Stack Overflow"><i class="fa fa-stack-overflow fa-3x"></i></a>
-            <a class="btn btn-info" href="https://twitter.com/wolfgang_hall" title="Follow me on Twitter"><i class="fa fa-twitter fa-3x"></i></a>
+              <a class="btn btn-info" href="https://github.com/WolfgangHall" title="Find me on Github"><i class="fa fa-github fa-3x"></i></a>
+              <a class="btn btn-info" href="mailto:johnalexander.w.hall@gmail.com" title="Email me"><i class="fa fa-google fa-3x"></i></a>
+              <a class="btn btn-info" href="https://www.linkedin.com/profile/view?id=AAMAABB23-UB2dbZNJStdBTQ58dJ5g241CIpO1I&trk=hp-identity-name" title="Find me on LinkedIn"><i class="fa fa-linkedin fa-3x"></i></a>
+              <a class="btn btn-info" href="http://stackoverflow.com/users/5447860/wolfgang-hall" title="Find me on Stack Overflow"><i class="fa fa-stack-overflow fa-3x"></i></a>
+              <a class="btn btn-info" href="https://twitter.com/wolfgang_hall" title="Follow me on Twitter"><i class="fa fa-twitter fa-3x"></i></a>
             </div>
           </div>
         </div>
 
-          <form class="form-horizontal">
-            <div class="form-group">
-              <label for="name" class="col-sm-2 control-label">Name:</label>
-              <div class="col-sm-9">
-                <input type="name" class="form-control" id="inputName" placeholder="Name">
-              </div>
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">Name:</label>
+            <div class="col-sm-9">
+              <input type="name" class="form-control" id="inputName" placeholder="Name">
             </div>
-            <div class="form-group">
-              <label for="inputEmail" class="col-sm-2 control-label">Email:</label>
-              <div class="col-sm-9">
-                <input type="email" class="form-control" id="inputEmail" placeholder="johndoe@email.com">
-              </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail" class="col-sm-2 control-label">Email:</label>
+            <div class="col-sm-9">
+              <input type="email" class="form-control" id="inputEmail" placeholder="johndoe@email.com">
             </div>
-            <div class="form-group">
-              <label for "inputMessage" class="col-sm-2 control-label">Message:</label>
-              <div class="col-sm-9">
-                <textarea class="form-control" id="inputMessage" placeholder="Leave a note..." rows="4"></textarea>
-              </div>
+          </div>
+          <div class="form-group">
+            <label for "inputMessage" class="col-sm-2 control-label">Message:</label>
+            <div class="col-sm-9">
+              <textarea class="form-control" id="inputMessage" placeholder="Leave a note..." rows="4"></textarea>
             </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
+          </div>
+        </form>
       </div>
-      <!-- /.modal-content -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
     </div>
-    <!-- /.modal-dialog -->
-
+    <!-- /.modal-content -->
   </div>
-  <!-- /.modal -->
+  <!-- /.modal-dialog -->
+
+</div>
+<!-- /.modal -->
 
 
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="js/portfoliojs.js"></script>
-  <script type="text/javascript" src="js/commits.js"></script>
-  <script type="text/javascript" src="js/buttons.js"></script>
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/portfoliojs.js"></script>
+<script type="text/javascript" src="js/commits.js"></script>
+<script type="text/javascript" src="js/buttons.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 
 </html>

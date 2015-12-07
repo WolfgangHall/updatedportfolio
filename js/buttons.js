@@ -8,15 +8,16 @@ $( document ).ready(function() {
 
   $("#projectBtn").click(function(e) {
     $('html, body').animate({
-      scrollTop: $("#projects").offset().top
+      scrollTop: $("#allprojects").offset().top
     }, 1800);
   });
 
   $("#mainBtn").click(function(e) {
     $('html, body').animate({
-      scrollTop: $("#projects").offset().top
+      scrollTop: $("#allprojects").offset().top
     }, 1800);
   });
 
 });
+
 
