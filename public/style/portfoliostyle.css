@@ -122,6 +122,10 @@ footer {
   margin: 15px;
 }
 
+#formValidation {
+  display: none;
+}
+
 
 #footerhead {
   padding-top: 50px;
