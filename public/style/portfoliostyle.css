@@ -109,7 +109,14 @@ thead th{
   padding-top: 50px;
 }
 
-
+.projectPhoto {
+  height: auto; 
+  width: auto; 
+  max-height: 300px;
+  max-width: 300px;
+  border-radius: 2%;
+  margin-bottom: 20px;
+}
 
 footer {
  text-align: center;
