@@ -47,6 +47,7 @@ thead th{
 #techsection {
   background-color: #85989F;
   padding-top: 25px;
+  text-align: center;
 }
 
 #techsection .page-header{
@@ -128,11 +129,6 @@ footer {
 #contactfooter .btn {
   margin: 15px;
 }
-
-#formValidation {
-  display: none;
-}
-
 
 #footerhead {
   padding-top: 50px;
