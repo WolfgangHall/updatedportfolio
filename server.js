@@ -5,7 +5,7 @@ var PORT = process.env.PORT || 8000;
 var mysql = require('mysql');
 
 var Sequelize = require('sequelize');
-var sequelize = new Sequelize('auth_db', 'root');
+// var sequelize = new Sequelize('auth_db', 'root');
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: false}));
@@ -60,9 +60,9 @@ app.post('/note', function(req, res) {
  });
 });
 
-sequelize.sync().then(function() {
+// sequelize.sync().then(function() {
  app.listen(PORT, function() {
   console.log("LISTENING on Port %s", PORT);
  });
-});
+// });
 
