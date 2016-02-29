@@ -8,7 +8,7 @@ $.ajax({
  success: function(repos) {
   for (var i = 0; i < repos.length; i++) {
    var newListItem = buildListGroup (repos[i]);
-   $(".list-group").eq(2).append(newListItem);
+   $(".list-group").eq(0).append(newListItem);
   }
  },
  error: function (jqXHR, textStatus) {
