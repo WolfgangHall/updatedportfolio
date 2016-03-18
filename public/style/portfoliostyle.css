@@ -1,12 +1,4 @@
 
-
-
-body {
-  padding-top: 50px;
-
-}
-
-
 .row-fluid {
   padding: 0px;
 }
@@ -14,13 +6,20 @@ body {
 h2, h3 {
   font-family: 'Bitter';
 }
+.row h2 {
+  color:black;
+}
 
 p {
   font-family: 'Raleway';
 }
 
-h1 h2 h3 h4 h5 h6 {
+h1 h4 h5 h6 {
   font-family: "Montserrat";
+}
+
+#tablist a {
+  color: black; 
 }
 
 thead th{
@@ -32,42 +31,38 @@ thead th{
   text-align: center;
   padding-top: 25px;
   padding-bottom: 30px;
+  background-color: #E6E6DC;
   
 }
 
 #aboutsection .panel {
-  margin-top: 20px;
-  background-color: #f0f0f0;
+  margin-top: 50px;
 }
 
 #aboutsection .panel-body {
-  text-align: left;
-}
-
-#techsection {
-  background-color: #85989F;
-  padding-top: 20px;
   text-align: center;
-  padding-bottom: 25px;
+  font-size: 1.2em;
 }
 
-#techsection .page-header{
-  text-align: center;
+#portfoliophoto {
+  height: auto; 
+  width: auto; 
+  max-height: 375px;
+  max-width: 375px;
+  border-radius: 2%;
+  margin-bottom: 20px;
 }
-
-#techsection .panel-heading{
-  text-align: center;
-}
-
-
 
 #projectsection {
   text-align: center;
 }
+#projectsection img{
+  align-content: center;
+}
 
 #allprojects {
  padding-top: 25px;
- background-color: #ced5db;
+ background-color: #81A594;
  padding-bottom: 60px;
 }
 
@@ -87,14 +82,21 @@ thead th{
   padding-top: 20px;
 }
 
-#portfoliophoto {
-  height: auto; 
-  width: auto; 
-  max-height: 375px;
-  max-width: 375px;
-  border-radius: 2%;
-  margin-bottom: 20px;
+#techsection {
+  background-color: #00628B;
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 25px;
 }
+
+#techsection .page-header{
+  text-align: center;
+}
+
+#techsection .panel-heading{
+  text-align: center;
+}
+
 
 .jumbotron{
   background: url("http://i1377.photobucket.com/albums/ah54/WolfgangHall/daa6e78c-32b4-49f9-a126-a1e27a450359_zpsv1s64spg.jpg"); 
