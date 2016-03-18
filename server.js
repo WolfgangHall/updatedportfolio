@@ -1,68 +1,42 @@
 var express = require('express');
 var app = express();
-var PORT = process.env.PORT || 8000;
+var PORT = process.env.PORT || 3000;
 
-// var mysql = require('mysql');
+var mongoose = require('mongoose');
+var Message = require('./config/schema.js');
+mongoose.connect('mongodb://localhost/websiteMessages');
 
-// var Sequelize = require('sequelize');
-// // var sequelize = new Sequelize('auth_db', 'root');
 
-// var bodyParser = require('body-parser');
-// app.use(bodyParser.urlencoded({extended: false}));
+
+
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/js', express.static('public/js'));
 app.use('/style', express.static('public/style'));
-
-// var User = sequelize.define('User', {
-//  email: {
-//   type: Sequelize.STRING,
-//   validate: {
-//    len: {
-//     args: [5,30]
-//    },
-//    isEmail: true
-//   },
-//   allowNull: false
-//  },
-//  name: {
-//   type: Sequelize.STRING,
-//   validate: {
-//    len: {
-//     args: [1,30],
-//     msg: "You must have a first name"
-//    }
-//   },
-//   allowNull: false
-//  },
-//  message: {
-//   type: Sequelize.TEXT,
-//   validate: {
-//    len: {
-//     args: [1,300],
-//     msg: "Please leave a message"
-//    }
-//   },
-//   allowNull: false
-//  }
-// });
 
 app.get("/", function(req,res){
     res.sendFile(process.cwd() + "/views/home.html");
 });
 
-// app.post('/note', function(req, res) {
+app.post('/message', function (req, res){
+  var newMessage = new Message ({
+    fullname: req.body.fullname, 
+    email: req.body.email, 
+    message: req.body.message
+  });
 
-//  User.create(req.body).then(function(user) {
-//   res.redirect('/');
-//  }).catch(function(err) {
-//   console.log(err);
-//   res.redirect('/?msg=' + err.message);
-//  });
-// });
+  newMessage.save(function (err, doc){
+    if (err) {return (err)}
+  })
+  res.redirect('/?msg=Message sent');
+});
 
-// sequelize.sync().then(function() {
+
+
+
  app.listen(PORT, function() {
   console.log("LISTENING on Port %s", PORT);
  });
-// });
+
 
