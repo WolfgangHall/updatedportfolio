@@ -46,8 +46,9 @@ thead th{
 
 #techsection {
   background-color: #85989F;
-  padding-top: 25px;
+  padding-top: 20px;
   text-align: center;
+  padding-bottom: 25px;
 }
 
 #techsection .page-header{
@@ -118,6 +119,8 @@ thead th{
   border-radius: 2%;
   margin-bottom: 20px;
 }
+
+
 
 footer {
  text-align: center;
