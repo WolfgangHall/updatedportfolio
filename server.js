@@ -20,13 +20,15 @@ app.get("/", function(req,res){
 });
 
 app.post('/message', function (req, res){
-  var newMessage = new Message ({
+  var newMessage = {
     fullname: req.body.fullname, 
     email: req.body.email, 
     message: req.body.message
-  });
+  }
 
-  newMessage.save(function (err, doc){
+  var message = new Message(newMessage);
+
+  message.save(function (err, doc){
     if (err) {return (err)}
   })
   res.redirect('/?msg=Message sent');

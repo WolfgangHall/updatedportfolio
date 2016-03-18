@@ -12,10 +12,24 @@ db.once('open', function() {
   console.log('Mongoose connection successful.');
 });
 
-var MessagesSchema = new Schema({
-  fullname: String,
-  message: String,
-  email: String
+var MessageSchema = new Schema({
+  fullname: {
+    type: String,
+    trim: true,
+    required: true
+  },
+  email: {
+    type: String,
+    trim: true,
+    required: true
+  },
+  message: {
+    type: String,
+    trim: true,
+    required: true
+  }
 });
 
-exports.Message = mongoose.model('Messages', MessagesSchema);
+var Message = mongoose.model('Message', MessageSchema);
+
+module.exports = Message;
